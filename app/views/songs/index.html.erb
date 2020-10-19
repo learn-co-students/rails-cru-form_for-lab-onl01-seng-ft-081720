@@ -1,0 +1,4 @@
+<% @songs.each do |song| %>
+    <p><%= song.name %></p>
+    <%= link_to "Update Song", edit_song_path(song) %>
+<% end %>
